@@ -1,0 +1,21 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"removeComments": false,
+		"module": "system",
+        "target": "ES6",
+        "sourceMap": true
+	},
+    "exclude": [
+        ".tmp",
+        "dist",
+        "gulp",
+        ".sass-cache",
+        "node_modules",
+		"jspm_packages",
+        "typings/main",
+		"typings/main.d.ts",
+		"typings/browser"
+    ]
+}
