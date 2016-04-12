@@ -2,7 +2,7 @@
   "jspm": {
     "name": "app",
     "dependencies": {
-      "scss": "github:mobilexag/plugin-sass@^0.3.1"
+      "scss": "github:KevCJones/plugin-scss@^0.2.8"
     },
     "devDependencies": {
       "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.5"
@@ -27,16 +27,6 @@
         "ignore": [
           "test.js"
         ]
-      },
-      "npm:sass.js@0.9.7": {
-        "map": {
-          "ws": "@empty"
-        },
-        "meta": {
-          "dist/sass.worker.js": {
-            "format": "global"
-          }
-        }
       },
       "npm:typescript@1.8.9": {
         "browser": {},

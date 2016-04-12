@@ -1,16 +1,6 @@
 SystemJS.config({
   transpiler: "plugin-typescript",
-  packages: {
-    "app": {
-      "format": "esm",
-      "main": "app.js",
-      "meta": {
-        "*.js": {
-          "loader": "plugin-typescript"
-        }
-      }
-    }
-  }
+  packages: {}
 });
 
 SystemJS.config({
@@ -30,13 +20,25 @@ SystemJS.config({
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
     "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.5",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
-    "scss": "github:mobilexag/plugin-sass@0.3.1",
+    "scss": "github:KevCJones/plugin-scss@0.2.8",
     "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
     "string_decoder": "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
     "util": "github:jspm/nodelibs-util@0.2.0-alpha",
     "vm": "github:jspm/nodelibs-vm@0.2.0-alpha"
   },
   packages: {
+    "github:KevCJones/plugin-scss@0.2.8": {
+      "map": {
+        "autoprefixer": "npm:autoprefixer@6.3.6",
+        "fs": "github:jspm/nodelibs-fs@0.1.2",
+        "lodash": "npm:lodash@4.10.0",
+        "path": "github:jspm/nodelibs-path@0.1.0",
+        "postcss": "npm:postcss@5.0.19",
+        "reqwest": "github:ded/reqwest@2.0.5",
+        "sass.js": "npm:sass.js@0.9.8",
+        "url": "github:jspm/nodelibs-url@0.1.0"
+      }
+    },
     "github:frankwallis/plugin-typescript@4.0.5": {
       "map": {
         "typescript": "npm:typescript@1.8.9"
@@ -72,18 +74,6 @@ SystemJS.config({
         "url": "npm:url@0.10.3"
       }
     },
-    "github:mobilexag/plugin-sass@0.3.1": {
-      "map": {
-        "autoprefixer": "npm:autoprefixer@6.3.5",
-        "fs": "github:jspm/nodelibs-fs@0.1.2",
-        "lodash": "npm:lodash@3.10.1",
-        "path": "github:jspm/nodelibs-path@0.1.0",
-        "postcss": "npm:postcss@5.0.19",
-        "reqwest": "github:ded/reqwest@2.0.5",
-        "sass.js": "npm:sass.js@0.9.7",
-        "url": "github:jspm/nodelibs-url@0.1.0"
-      }
-    },
     "npm:asn1.js@4.5.2": {
       "map": {
         "bn.js": "npm:bn.js@4.11.1",
@@ -91,10 +81,10 @@ SystemJS.config({
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
       }
     },
-    "npm:autoprefixer@6.3.5": {
+    "npm:autoprefixer@6.3.6": {
       "map": {
-        "browserslist": "npm:browserslist@1.3.0",
-        "caniuse-db": "npm:caniuse-db@1.0.30000438",
+        "browserslist": "npm:browserslist@1.3.1",
+        "caniuse-db": "npm:caniuse-db@1.0.30000451",
         "normalize-range": "npm:normalize-range@0.1.2",
         "num2fraction": "npm:num2fraction@1.2.2",
         "postcss": "npm:postcss@5.0.19",
@@ -141,9 +131,9 @@ SystemJS.config({
         "parse-asn1": "npm:parse-asn1@5.0.0"
       }
     },
-    "npm:browserslist@1.3.0": {
+    "npm:browserslist@1.3.1": {
       "map": {
-        "caniuse-db": "npm:caniuse-db@1.0.30000438"
+        "caniuse-db": "npm:caniuse-db@1.0.30000451"
       }
     },
     "npm:buffer@4.5.1": {

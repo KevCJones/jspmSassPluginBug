@@ -1,5 +1,9 @@
-@import './b.scss';
+@import './b';
 
-@import './localhost:3000/c.scss';
+@import './c';
 
-@import './localhost:3000/d';
+@import './d';
+
+body {
+    color: green;
+}
