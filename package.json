@@ -2,7 +2,7 @@
   "jspm": {
     "name": "app",
     "dependencies": {
-      "scss": "github:KevCJones/plugin-scss@^0.2.8"
+      "scss": "github:KevCJones/plugin-scss@^0.2.9"
     },
     "devDependencies": {
       "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.5"
